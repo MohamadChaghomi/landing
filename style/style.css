@@ -1,0 +1,1387 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo";
+    src: url("../fonts/Archivo/Archivo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "archivo_bold";
+    src: url("../fonts/Archivo/Archivo-Bold.ttf") format("truetype");
+} 
+@font-face {
+    font-family: "roboto_bold";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "roboto";
+    padding: 0;
+    margin: 0;  
+}
+
+.container {
+    overflow: hidden;
+  }
+  
+.header {
+    padding: 0px;
+    max-width: 100%;
+    height: 1280px;
+    background-color: #3b3735;
+    background-image: url("../images/header-bg.jpg");
+    background-size: cover;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px; 
+}
+  
+a {
+    text-decoration: none;
+}
+
+.header_Links {
+    padding-left: 130px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header_left_links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left_links {
+    margin-left: 40px;
+}
+
+.homelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.line {
+    border: 2px solid rgba(247, 108, 69, 1) !important;
+    width: 40px;
+    transform: rotate(45deg);
+    margin-left: -45px;
+    margin-top: -10px;
+    z-index: 0 !important;
+}
+
+.home {
+    margin-top: -10px;
+    font-family: "roboto_bold";
+}
+
+.home,
+.destination,
+.near_me,
+.events,
+.blog,
+.gallery,
+.about,
+.contact_us{
+   color: white;
+}
+
+.destination:hover,
+.near_me:hover,
+.events:hover,
+.blog:hover,
+.gallery:hover,
+.about:hover,
+.contact_us:hover{
+    font-size: 17px;
+    transition-duration: 0.2s;
+}
+
+.bar {
+    visibility: hidden;
+}
+
+.header_right_links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.right_links_signin,
+.right_links_signup {
+    margin-left: 40px;
+}
+
+.right_links_signin {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.sign_in:hover {
+    opacity: 0.7;
+    transition-duration: 0.2s;
+ }
+
+.sign_up:hover {
+    opacity: 0.7;
+    transition-duration: 0.2s;
+ }
+
+.sign_up, 
+.sign_in {
+    font-family: "roboto_bold";
+    color: white;
+}
+ 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 380px;
+}
+
+.find_yourself_outside {
+    font-size: 81px;
+    color: #ffffff;
+    text-align: center;
+    width: 600px;
+    font-family: "archivo_bold";
+}
+
+
+.text {
+    color: #ffffff;
+    width: 450px;
+    height: 57px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border-radius: 25px;
+    background-color: #e76f51;
+    margin-top: 30px;
+}
+
+.button:hover {
+    padding: 15px 55px;
+    transition-duration: 0.2s;
+}
+  
+.about_camping {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -110px;
+}
+
+.camping_part,
+.tours_and_tickets,
+.permits,
+.recreation_activities {
+    width: 257px;
+    height: 312px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.camping_part img,
+.tours_and_tickets img,
+.permits img,
+.recreation_activities img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+.camping_part span,
+.tours_and_tickets span,
+.permits span,
+.recreation_activities span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "archivo_bold";
+    text-align: center;
+}
+
+.camping_part  span:hover,
+.tours_and_tickets  span:hover,
+.permits  span:hover,
+.recreation_activities  span:hover {
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    transition-duration: 0.2s;
+}
+
+.camping_part p,
+.tours_and_tickets p,
+.permits p,
+.recreation_activities p {
+    width: 277px;
+    height: 79px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "roboto";
+    text-align: center;
+}
+
+.image_and_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_and_title img {
+    width: 70px;
+    height: 70px;
+    margin: 70px 0px 35px;
+}
+
+.image_and_title img:hover {
+    width: 80px;
+    height: 80px;
+    transition: 0.2s;
+}
+
+.image_and_title strong {
+    font-size: 40px;
+    width: 450px;
+    color: #3b3735;
+    font-family: "archivo_bold";
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-and_title strong:hover {
+    font-size: 44px;
+    width: 500px;
+    transition-duration: 0.2s;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 1575px;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    gap : 25px;
+    background-image: url("../svgs/shape1.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.trickle_creek_ranch,
+.dragonfly_tiny_cabin,
+.tiny_cabin_in_the_mountains,
+.the_stuga,
+.luxury_tiny_beach_cabin,
+.the_summit_cabin,
+.kindred_spirits_cabin,
+.the_hermitage_cabin,
+.red_lifeguard_stand,
+.the_tree_house,
+.barrier_islandelevated_tent,
+.ninovan_on_the_shore {
+    width: 257px;
+    height: 465px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+  
+.trickle_creek_ranch img,
+.dragonfly_tiny_cabin img,
+.tiny_cabin_in_the_mountains img,
+.the_stuga img,
+.luxury_tiny_beach_cabin img,
+.the_summit_cabin img,
+.kindred_spirits_cabin img,
+.the_hermitage_cabin img,
+.red_lifeguard_stand img,
+.the_tree_house img,
+.barrier_islandelevated_tent img,
+.ninovan_on_the_shore img {
+    width: 230px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.trickle_creek_ranch img:hover,
+.dragonfly_tiny_cabin img:hover,
+.tiny_cabin_in_the_mountains img:hover,
+.the_stuga img:hover,
+.luxury_tiny_beach_cabin img:hover,
+.the_summit_cabin img:hover,
+.kindred_spirits_cabin img:hover,
+.the_hermitage_cabin img:hover,
+.red_lifeguard_stand img:hover,
+.the_tree_house img:hover,
+.barrier_islandelevated_tent img:hover,
+.ninovan_on_the_shore img:hover {
+    width: 250px;
+    height: 200px;
+    transition: 0.2s;
+}
+
+.trickle_creek_ranch .like_icon,
+.dragonfly_tiny_cabin .like_icon,
+.tiny_cabin_in_the_mountains .like_icon,
+.the_stuga .like_icon,
+.luxury_tiny_beach_cabin .like_icon,
+.the_summit_cabin .like_icon,
+.kindred_spirits_cabin .like_icon,
+.the_hermitage_cabin .like_icon,
+.red_lifeguard_stand .like_icon,
+.the_tree_house .like_icon,
+.barrier_islandelevated_tent .like_icon,
+.ninovan_on_the_shore .like_icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: -165px;
+    margin-bottom: 115px;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.trickle_creek_ranch .like_icon:hover,
+.dragonfly_tiny_cabin .like_ico:hover,
+.tiny_cabin_in_the_mountains .like_icon:hover,
+.the_stuga .like_icon:hover,
+.luxury_tiny_beach_cabin .like_icon:hover,
+.the_summit_cabin .like_icon:hover,
+.kindred_spirits_cabin .like_icon:hover,
+.the_hermitage_cabin .like_icon:hover,
+.red_lifeguard_stand .like_icon:hover,
+.the_tree_house .like_icon:hover,
+.barrier_islandelevated_tent .like_icon:hover,
+.ninovan_on_the_shore .like_icon:hover{
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.trickle_creek_ranch .price,
+.dragonfly_tiny_cabin .price,
+.tiny_cabin_in_the_mountains .price,
+.the_stuga .price,
+.luxury_tiny_beach_cabin .price,
+.the_summit_cabin .price,
+.kindred_spirits_cabin .price,
+.the_hermitage_cabin .price,
+.red_lifeguard_stand .price,
+.the_tree_house .price,
+.barrier_islandelevated_tent .price,
+.ninovan_on_the_shore .price {
+    width: 120px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    margin-top: -25px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #e76f51;
+    font-weight: 500;
+    font-family: "roboto";
+    text-align: center;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trickle_creek_ranch .main_titeles,
+.dragonfly_tiny_cabin .main_titeles,
+.tiny_cabin_in_the_mountains .main_titeles,
+.the_stuga .main_titeles,
+.luxury_tiny_beach_cabin .main_titeles,
+.the_summit_cabin .main_titeles,
+.kindred_spirits_cabin .main_titeles,
+.the_hermitage_cabin .main_titeles,
+.red_lifeguard_stand .main_titeles,
+.the_tree_house .main_titeles,
+.barrier_islandelevated_tent .main_titeles,
+.ninovan_on_the_shore .main_titeles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "archivo";
+    text-align: center;
+}
+
+.trickle_creek_ranch .main_titeles:hover,
+.dragonfly_tiny_cabin .main_titeles:hover,
+.tiny_cabin_in_the_mountains .main_titeles:hover,
+.the_stuga .main_titeles:hover,
+.luxury_tiny_beach_cabin .main_titeles:hover,
+.the_summit_cabin .main_titeles:hover,
+.kindred_spirits_cabin .main_titeles:hover,
+.the_hermitage_cabin .main_titeles:hover,
+.red_lifeguard_stand .main_titeles:hover,
+.the_tree_house .main_titeles:hover,
+.barrier_islandelevated_tent .main_titeles:hover,
+.ninovan_on_the_shore .main_titeles:hover {
+    font-size: 20px;
+    margin: 10px;
+    transition-duration: 0.2s;
+}
+
+.trickle_creek_ranch p,
+.dragonfly_tiny_cabin p,
+.tiny_cabin_in_the_mountains p,
+.the_stuga  p,
+.luxury_tiny_beach_cabin p,
+.the_summit_cabin p,
+.kindred_spirits_cabin p,
+.the_hermitage_cabin p,
+.red_lifeguard_stand p,
+.the_tree_house p,
+.barrier_islandelevated_tent p,
+.ninovan_on_the_shore p {
+    width: 230px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "roboto";
+    text-align: center;
+}
+
+.trickle_creek_ranch a,
+.dragonfly_tiny_cabin a,
+.tiny_cabin_in_the_mountains a,
+.the_stuga  a,
+.luxury_tiny_beach_cabin a,
+.the_summit_cabin a,
+.kindred_spirits_cabin a,
+.the_hermitage_cabin a,
+.red_lifeguard_stand a,
+.the_tree_house a,
+.barrier_islandelevated_tent a,
+.ninovan_on_the_shore a {
+    color: black;
+    font-weight: 900;
+    margin-top: 32px;
+    opacity: 0.4;
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(141, 141, 141, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trickle_creek_ranch a:hover,
+.dragonfly_tiny_cabin a:hover,
+.tiny_cabin_in_the_mountains a:hover,
+.the_stuga  a:hover,
+.luxury_tiny_beach_cabin a:hover,
+.the_summit_cabin a:hover,
+.kindred_spirits_cabin a:hover,
+.the_hermitage_cabin a:hover,
+.red_lifeguard_stand a:hover,
+.the_tree_house a:hover,
+.barrier_islandelevated_tent a:hover,
+.ninovan_on_the_shore a:hover {
+    font-size: 18px;
+    margin-top: 30px;
+    width: 180px;
+    height: 62px;
+    border-radius: 37px;
+    transition-duration: 0.2s;
+}
+  
+.view_all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_all a {
+    text-decoration: none;
+    width: 205px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e76f51;
+    font-size: 18px;
+    line-height: 28px;
+    color: #e76f51;
+    font-weight: 500;
+    font-family: "roboto";
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_all a:hover {
+    width: 217px;
+    height: 62px;
+    border-radius: 37px;
+    font-size: 22px;
+    transition-duration: 0.2s;
+  }
+  
+.communication {
+    width: 1250px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    border-radius: 20px;
+    background-image: url("../svgs/shape3.svg");
+    filter: drop-shadow(4.994px 9.801px 17.5px rgba(59, 55, 53, 0.05));
+    background-color: #f8e1db;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+}
+
+.textbox_communication {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.textbox_communication span {
+    font-size: 40px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "archivo_bold";
+    margin-left: 90px;
+    margin-top: 100px;
+}
+  
+.textbox_communication span:hover {
+    font-size: 50px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    transition-duration: 0.2s;
+}
+
+.textbox_communication p {
+    width: 486px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 500;
+    font-family: "roboto";
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.textbox_communication input {
+    background-image: url("../svg-icons/email.svg");
+    background-position-x: 27px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 546px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 60px;
+    margin-left: 90px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.textbox_communication input:hover {
+    width: 566px;
+    height: 100px;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.send_icon_communication {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 575px;
+    margin-top: -65px;
+    background-color: #e76f51;
+    filter: drop-shadow(4.994px 9.801px 17.5px rgba(231, 111, 81, 0.4));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.send_icon_communication img {
+    width: 24px;
+    height: 18px;
+}
+
+.send_icon_communication :hover {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.image_part_communication {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+
+.image_part_communication img{
+    width: 350px;
+    height: 300px;
+    margin-left: 840px;
+    margin-top: -280px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    background-color: #f8e1db;
+    position: relative;
+}
+
+.up_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.arrow_top {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    filter: drop-shadow(4.994px 9.801px 17.5px rgba(59, 55, 53, 0.05));
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    right: 300px;
+}
+
+.arrow_top img{
+    width: 20px;
+    height: 20px;
+}
+
+.arrow_top:hover {
+    width: 70px;
+    height: 70px;
+    transition: 0.2s;
+}
+
+.left_footer{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.hipcamp {
+    width: 500px;
+}
+
+.title_hipcamp {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: bold;
+    font-family: "archivo_bold";
+}
+
+.hipcamp p {
+    margin-top: 20px;
+    width: 500px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "roboto";
+}
+  
+
+.right_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.get_to_know_us, 
+.plan_with_us,
+.let_us_help_you  {
+
+    width: 180px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.get_to_know_us span,
+.plan_with_us span,
+.let_us_help_you span {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "archivo_bold";
+    margin-bottom: 8px;
+}
+
+.get_to_know_us span:hover,
+.plan_with_us span:hover,
+.let_us_help_you span:hover  {
+    font-size: 20px;
+    margin-left: -12px;
+    margin-bottom: 15px;
+    transition-duration: 0.2s;
+}
+
+.get_to_know_us a,
+.plan_with_us a,
+.let_us_help_you a {
+    text-decoration: none;
+    margin-bottom: 8px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "roboto";
+}
+
+.middle_footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+.download {
+    font-size: 18px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 900;
+    font-family: "archivo";
+}
+
+.images{
+    cursor: pointer;
+}
+
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright span {
+    width: 1900px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3b3735;
+    font-weight: 400;
+    font-family: "roboto";
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 700px) {
+    .header {
+        max-width: 100%;
+        height: 761px;
+        background-image: url("../images/header-bg.jpg");
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: 80%;
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .header_Links{
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .header_left_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .left_links{
+        margin: 0;
+    }
+    .home,
+    .destination,
+    .near_me,
+    .events,
+    .blog,
+    .gallery,
+    .about,
+    .contact_us,
+    hr{
+        display: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 300px;
+    }
+    .bar {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        background-color: #ffffff;
+    }
+    .bar 
+    :hover {
+        cursor: pointer;
+    }
+    .right_links_signup , .right_links_signin {
+        display: none;
+    }
+    .content {
+        margin-top: 130px;
+    }
+    .find_yourself_outside {
+        font-size: 50px;
+        width: 400px;
+    }
+    .text {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .button {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 50px;
+        border-radius: 25px;
+        background-color: #e76f51;
+        margin-top: 25px;
+    }
+    .button :hover {
+        padding: 15px 55px;
+        transition-duration: 0.2s;
+    }
+    .about_camping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -160px;
+
+    }
+
+    .camping_part ,
+    .tours_and_tickets,
+    .permits,
+    .recreation_activities{
+        margin-top: 20px;
+    }
+
+    .camping_part p,
+    .tours_and_tickets p,
+    .permits p,
+    .recreation_activities p{
+        width: 200px;
+    }
+    .image-and_title img {
+        width: 50px;
+        height: 70px;
+        margin: 70px 0px 35px;
+    }
+    .image-and_title img:hover {
+        width: 80px;
+        height: 80px;
+        transition: 0.2s;
+    }
+    .image-and_title strong {
+        font-size: 30px;
+        width: 400px;
+    }
+    .image-and_title strong:hover {
+        font-size: 33px;
+        width: 450px;
+        transition-duration: 0.2s;
+    }
+    .main {
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+    .trickle_creek_ranch,
+    .dragonfly_tiny_cabin,
+    .tiny_cabin_in_the_mountains,
+    .the_stuga,
+    .luxury_tiny_beach_cabin,
+    .the_summit_cabin,
+    .kindred_spirits_cabin,
+    .the_hermitage_cabin,
+    .red_lifeguard_stand,
+    .the_tree_house,
+    .barrier_islandelevated_tent,
+    .ninovan_on_the_shore {
+        width: 357px;
+        height: 465px;
+        border-radius: 20px;
+    }
+    .trickle_creek_ranch img,
+    .dragonfly_tiny_cabin img,
+    .tiny_cabin_in_the_mountains img,
+    .the_stuga img,
+    .luxury_tiny_beach_cabin img,
+    .the_summit_cabin img,
+    .kindred_spirits_cabin img,
+    .the_hermitage_cabin img,
+    .red_lifeguard_stand img,
+    .the_tree_house img,
+    .barrier_islandelevated_tent img,
+    .ninovan_on_the_shore img{
+        width: 277px;
+        height: 180px;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+    .trickle_creek_ranch img:hover,
+    .dragonfly_tiny_cabin img:hover,
+    .tiny_cabin_in_the_mountains img:hover,
+    .the_stuga img:hover,
+    .luxury_tiny_beach_cabin img:hover,
+    .the_summit_cabin img:hover,
+    .kindred_spirits_cabin img:hover,
+    .the_hermitage_cabin img:hover,
+    .red_lifeguard_stand img:hover,
+    .the_tree_house img:hover,
+    .barrier_islandelevated_tent img:hover,
+    .ninovan_on_the_shore img:hover{
+        width: 308px;
+        height: auto;
+        transition: 0.2s;
+    }
+
+    .trickle_creek_ranch .like_icon,
+    .dragonfly_tiny_cabin .like_icon,
+    .tiny_cabin_in_the_mountains .like_icon,
+    .the_stuga .like_icon,
+    .luxury_tiny_beach_cabin .like_icon,
+    .the_summit_cabin .like_icon,
+    .kindred_spirits_cabin .like_icon,
+    .the_hermitage_cabin .like_icon,
+    .red_lifeguard_stand .like_icon,
+    .the_tree_house .like_icon,
+    .barrier_islandelevated_tent .like_icon,
+    .ninovan_on_the_shore .like_icon{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: -165px;
+        margin-bottom: 115px;
+        margin-left: 198px;
+    }
+
+    .trickle_creek_ranch .like_icon :hover,
+    .dragonfly_tiny_cabin .like_icon:hover,
+    .tiny_cabin_in_the_mountains .like_icon:hover,
+    .the_stuga .like_icon:hover,
+    .luxury_tiny_beach_cabin .like_icon:hover,
+    .the_summit_cabin .like_icon:hover,
+    .kindred_spirits_cabin .like_icon:hover,
+    .the_hermitage_cabin .like_icon:hover,
+    .red_lifeguard_stand .like_icon:hover,
+    .the_tree_house .like_icon:hover,
+    .barrier_islandelevated_tent .like_icon:hover,
+    .ninovan_on_the_shore .like_icon:hover {
+        width: 50px;
+        height: 50px;
+        transition: 0.2s;
+    }
+    .trickle_creek_ranch .price,
+    .dragonfly_tiny_cabin .price,
+    .tiny_cabin_in_the_mountains .price,
+    .the_stuga .price,
+    .luxury_tiny_beach_cabin .price,
+    .the_summit_cabin .price,
+    .kindred_spirits_cabin .price,
+    .the_hermitage_cabin .price,
+    .red_lifeguard_stand .price,
+    .the_tree_house .price,
+    .barrier_islandelevated_tent .price,
+    .ninovan_on_the_shore .price{
+        width: 145px;
+        height: 50px;
+        border-radius: 14px;
+        margin-top: -25px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 35px;
+    }
+    .trickle_creek_ranch .main_titeles,
+    .dragonfly_tiny_cabin .main_titeles,
+    .tiny_cabin_in_the_mountains .main_titeles,
+    .the_stuga .main_titeles,
+    .luxury_tiny_beach_cabin .main_titeles,
+    .the_summit_cabin .main_titeles,
+    .kindred_spirits_cabin .main_titeles,
+    .the_hermitage_cabin .main_titeles,
+    .red_lifeguard_stand .main_titeles,
+    .the_tree_house .prmain_titelesices,
+    .barrier_islandelevated_tent .main_titeles,
+    .ninovan_on_the_shore .main_titeles{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .trickle_creek_ranch .main_titeles:hover,
+    .dragonfly_tiny_cabin .main_titeles:hover,
+    .tiny_cabin_in_the_mountains .main_titeles:hover,
+    .the_stuga .main_titeles:hover,
+    .luxury_tiny_beach_cabin .main_titeles:hover,
+    .the_summit_cabin .main_titeles:hover,
+    .kindred_spirits_cabin .main_titeles:hover,
+    .the_hermitage_cabin .main_titeles:hover,
+    .red_lifeguard_stand .main_titeles:hover,
+    .the_tree_house .prmain_titelesice:hover,
+    .barrier_islandelevated_tent .main_titeles:hover,
+    .ninovan_on_the_shore .main_titeles:hover{
+        font-size: 20px;
+        margin: 10px;
+        transition-duration: 0.2s;
+    }
+    .trickle_creek_ranch p,
+    .dragonfly_tiny_cabin p,
+    .tiny_cabin_in_the_mountains p,
+    .the_stuga p,
+    .luxury_tiny_beach_cabin p,
+    .the_summit_cabin p,
+    .kindred_spirits_cabin p,
+    .the_hermitage_cabin p,
+    .red_lifeguard_stand p,
+    .the_tree_house p,
+    .barrier_islandelevated_tent p,
+    .ninovan_on_the_shore p{
+        width: 277px;
+        height: 52px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .trickle_creek_ranch a,
+    .dragonfly_tiny_cabin a,
+    .tiny_cabin_in_the_mountains a,
+    .the_stuga a,
+    .luxury_tiny_beach_cabin a,
+    .the_summit_cabin a,
+    .kindred_spirits_cabin a,
+    .the_hermitage_cabin a,
+    .red_lifeguard_stand a,
+    .the_tree_house a,
+    .barrier_islandelevated_tent a,
+    .ninovan_on_the_shore a{
+        margin-top: 32px;
+        width: 185px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    .trickle_creek_ranch a:hover,
+    .dragonfly_tiny_cabin a:hover,
+    .tiny_cabin_in_the_mountains a:hover,
+    .the_stuga a:hover,
+    .luxury_tiny_beach_cabin a:hover,
+    .the_summit_cabin a:hover,
+    .kindred_spirits_cabin a:hover,
+    .the_hermitage_cabin a:hover,
+    .red_lifeguard_stand a:hover,
+    .the_tree_house a:hover,
+    .barrier_islandelevated_tent a:hover,
+    .ninovan_on_the_shore a:hover{
+        font-size: 18px;
+        margin-top: 30px;
+        width: 197px;
+        height: 62px;
+        border-radius: 37px;
+        transition-duration: 0.2s;
+    }
+    .view_all a {
+        width: 205px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 50px;
+    }
+    .view_all a:hover {
+        width: 217px;
+        height: 62px;
+        border-radius: 37px;
+        font-size: 22px;
+        transition-duration: 0.2s;
+    }
+    .communication {
+        width: 374px;
+        height: 685px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 170px;
+        border-radius: 20px;
+        background-image: url("../svgs/shape3-Responsive.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .textbox_communication span {
+        width: 200px;
+        font-size: 40px;
+        line-height: 28px;
+        margin-left: 95px;
+        margin-top: 340px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .textbox_communication span:hover {
+        font-size: 44px;
+        width: 250px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+        transition-duration: 0.2s;
+    }
+    .textbox_communication p {
+        width: 300px;
+        height: 82px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 50px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .textbox_communication input {
+        background-image: url("../svg-icons/email-Responsive.svg");
+        background-position-x: 27px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        width: 334px;
+        height: 80px;
+        border-radius: 20px;
+        padding-left: 60px;
+        margin-left: 22px;
+        margin-top: 30px;
+    }
+    .textbox_communication input:hover {
+        width: 346px;
+        height: 92px;
+        margin-top: 30px;
+        margin-left: 19px;
+        transition: 0.2s;
+    }
+    .send_icon_communication {
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 293px;
+        margin-top: -66px;
+    }
+    .send_icon_communication img {
+        width: 24px;
+        height: 18px;
+    }
+    .send_icon_communication:hover {
+        opacity: 0.7;
+        transition: 0.2s;
+    }
+    .image_part_communication img {
+        width: 342px;
+        height: 249px;
+        margin-left: 20px;
+        margin-top: -580px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        margin-top: 180px;
+    }
+
+    .arrow_top {
+        position: absolute;
+        top:  -10px;
+        left: auto;
+        right: auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        margin-left: 180px;
+        margin-top: -28px;
+    }
+
+    .arrow_top:hover {
+        width: 70px;
+        height: 70px;
+        margin-left: 175px;
+        margin-top: -33px;
+        transition: 0.2s;
+    }
+    .up_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hipcamp {
+        margin-top: 52px;
+        width: 100%;
+    }
+    .title_hipcamp{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .hipcamp p {
+        width: 350px;
+        height: 109px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .right_footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 90px;
+    }
+    .get_to_know_us ,
+    .plan_with_us,
+    .let_us_help_you  {
+        margin-top: 10px;
+
+    }
+
+    .get_to_know_us span,
+    .plan_with_us span, 
+    .let_us_help_you span {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .get_to_know_us span:hover ,
+    .plan_with_us span:hover, 
+    .let_us_help_you span:hover {
+        font-size: 20px;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        width: 160px;
+        transition-duration: 0.2s;
+    }
+    .get_to_know_us a ,
+    .plan_with_usn a, 
+    .let_us_help_you a {
+        margin-bottom: 8px;
+        line-height: 22px;
+    }
+    .rules {
+        line-height: 28px;
+        margin-top: -3px;
+        margin-bottom: 4px;
+    }
+    .copyright span {
+        width: 395px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+  }  
